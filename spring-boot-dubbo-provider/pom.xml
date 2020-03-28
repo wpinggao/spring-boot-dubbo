@@ -79,6 +79,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.github.wpinggao</groupId>
+            <artifactId>component-dislogtracing</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
         </dependency>
