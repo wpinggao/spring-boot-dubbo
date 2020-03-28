@@ -31,8 +31,6 @@
 
     <dubbo:consumer retries="${dubbo.consumer.retries:0}" timeout="${dubbo.consumer.timeout:10000}" check="${dubbo.consumer.check:false}" />
 
-    <dubbo:provider retries="${dubbo.provider.retries:0}" timeout="${dubbo.provider.timeout:10000}" />
-
     <dubbo:reference id="echoDubboService" interface="com.github.wpinggao.springboot.dubbo.api.service.EchoDubboService" version="1.0.0" timeout="15000">
         <dubbo:method name="echo" oninvoke="echoCallBackService.oninvoke" onreturn="echoCallBackService.onreturn" onthrow="echoCallBackService.onthrow"/>
     </dubbo:reference>

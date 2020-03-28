@@ -4,12 +4,11 @@ server:
   port: 8094
 
 dubbo:
-  enabled: false
   application:
     name: ${spring.application.name}
   registry:
     protocol: zookeeper
-    address: 10.206.29.21:2181
+    address: 127.0.0.1:2181
 
 
 
