@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /${spring.application.name}
+  port: 8093
+
+dubbo:
+  enabled: false
+  application:
+    name: ${spring.application.name}
+  registry:
+    protocol: zookeeper
+    address: 10.206.29.21:2181
+
+
+
+
+
+
+
+
+
